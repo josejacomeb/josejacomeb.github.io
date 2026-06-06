@@ -1,0 +1,148 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-emerald}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{./examples/profile}
+\name{José}{Jácome}
+\position{Mechatronics M.Sc.{\enskip\cdotp\enskip}Computer Vision Engineer}
+\address{Santiago de Píllaro, Ecuador}
+
+%\mobile{(+593) 99-088-4114}
+\whatsapp{(+593) 99-088-4114}
+\email{josejacomeb@gmail.com}
+%\dateofbirth{January 1st, 1970}
+\homepage{https://josejacomeb.github.io/}
+\github{josejacomeb}
+\linkedin{josejacomeb}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \x{x-id}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \telegram{telegram-username}
+\googlescholar{3vra3XcAAAAJ}{José Jácome}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+\quote{``A goal is a dream with a deadline"}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Add recipient}
+  {City, Country}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Title of the Letter}
+% How the letter is opened
+\letteropening{Dear Recipient,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {José Jácome~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+My name is José Jácome, I am a Mechatronics Engineer M.Sc. of the University of Debrecen with four years of experience in Computer Vision, Mechatronics and Embedded Systems. 
+I am eager to apply my expertise in \textbf{fields} at \textbf{institution}. 
+During the past four years I worked at ARS Traffic \& Transportation Technologies, I developed high-reliability supervised vision solutions where Deep Learning models 
+where deployed on Nvidia Jetson and Intel Movidius platforms, using C++ and Python to ensure performance in distributed traffic monitoring applications.
+
+\lettersection{Why Institution?}
+I am highly motivated to apply to \textbf{Institution.} because of its prestigious environment at the intersection of Manufacturing and Automation,
+a field that motivates me because this fulfils my academic and professional aspirations. 
+The opportunity to contribute to the CIB and collaborate within the multidisciplinary research ecosystem at the Department of Mechanical Engeenering strongly aligns with my long-term research goals.
+As a Computer Vision engineer I could get meaningful experience in managing thousand of data of vehicles per day, automating in that way the integration between camera data and databases to provide better information to improve decisions about roads.
+
+\lettersection{Why Me?}
+
+I have always been passionated about Robotics and Mechatronics, and throughout my academic journey I have combined both fields in practical and research-oriented projects. During my studies, I had the privilege of publishing two research papers related to these areas, which strengthened both my technical background and my motivation to contribute to advanced research in digital twins.
+
+Morever, I have developed several personal and collaborative projects involving the integration of software and hardware systems, ranging from embedded systems to intelligent robotic applications. I invite you to check my GitHub portfolio for more information of my technical competences, reflecting both my initiative and continuous interest in innovation and autonomous systems.
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}
